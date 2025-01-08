@@ -1,0 +1,77 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+frameRate(1)
+  var a1 = random(255)
+  var a2 = random(255)
+  var a3 = random(255)
+  var x = 200
+  var y = 350
+  background(a1)
+strokeWeight(0)
+  //head
+  fill(200,140,100)
+  rect(170,100,130,100)
+                 
+  ellipse(230,40,25,50)
+  ellipse(260,45,25,50)
+  ellipse(200,100,200,100)
+  //body
+  //b-shoe
+  fill(a1,a3,a2)
+  ellipse(x,y,75,40)
+  ellipse(x+65,y,75,40) 
+  rect(170,300,130,50)
+  fill(255,255,255)
+  strokeWeight(1)
+  ellipse(x-20,y+5,50,40)
+  quad(180,375,165,370,230,360,240,365)
+  ellipse(x+55,y+5,60,40)
+  quad(245,376,230,370,305,355,295,366)
+  strokeWeight(0)
+  triangle(200,340,180,330,220,330)
+  triangle(275,340,255,330,295,330)
+  //b-hood
+  fill(a2,a1,a3)
+  ellipse(180,210,50,100)
+  rect(170,160,130,70)
+  //b-jean
+  fill(0,190,200)
+  rect(170,230,130,100)
+  strokeWeight(1)
+  fill(0,230,210)
+  rect(170,300,130,30)
+  strokeWeight(0)
+  //b-f-arm
+  fill(a2,a1,a3)
+  ellipse(290,210,50,100)
+  //nose
+  fill(0,0,0)
+  ellipse(135,100,70,75)
+  quad(170,50,110,70,110,130,170,110)
+  strokeWeight(1)
+  //ln
+  fill(255,255,255)
+  ellipse(200,75,20,10)
+  ellipse(235,75,20,10)
+  fill(0,0,0)
+  ellipse(202,75,8,10)
+  ellipse(237,75,8,10)
+  strokeWeight(2)
+  line(190,60,210,60)
+  line(225,60,245,60)
+  line(190,130,210,127)
+  line(210,127,230,120)
+  line(230,115,235,125)
+  line(200,140,230,135)
+  line(170,230,270,230) 
+  line(230,330,220,250)
+  line(160,200,170,230)
+  line(285,200,270,230)
+  line(285,200,270,180)
+  line(270,230,300,255)
+  line(290,330,290,260)
+  line(170,160,300,160)
+}
